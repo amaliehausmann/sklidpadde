@@ -14,7 +14,7 @@ div{
     display: flex;
     position: absolute;
     margin: auto;
-    right: 35%;
+    right: 40%;
     bottom: 10%;
     gap: 2vw;
 }
@@ -30,4 +30,15 @@ button{
 
 button:hover{
     background-color: darkblue;
+}
+
+@media screen and (max-width: 1300px){
+
+    #skildpadde{
+        width: 1000px;
+    }
+
+    div{
+        right: 48%;
+    }
 }
