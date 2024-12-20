@@ -2,6 +2,7 @@ body{
     margin: auto;
     overflow-x: hidden;
     overflow-y: hidden;
+    position: relative;
 }
 
 #skildpadde{
