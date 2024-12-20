@@ -11,16 +11,13 @@ const riveInstance = new rive.Rive({
   stateMachines: "controller",
   onLoad: () => {
     riveInstance.resizeDrawingSurfaceToCanvas();
+    let controller_inputs = riveInstance.stateMachineInputs("controller");
+    lowEnergy = controller_inputs.find((item) => item.name === "lowEnergy");
+    renewedEnergy = controller_inputs.find(
+      (item) => item.name === "renewedEnergy"
+    );
   },
 });
-
-// get controller inputs
-let controller_inputs = riveInstance.stateMachineInputs("controller");
-console.log(controller_inputs);
-lowEnergy = controller_inputs.find((item) => item.name === "lowEnergy");
-renewedEnergy = controller_inputs.find((item) => item.name === "renewedEnergy");
-console.log(lowEnergy);
-console.log(renewedEnergy);
 
 hideButton.addEventListener("click", () => {
   lowEnergy.fire();
@@ -30,4 +27,4 @@ showButton.addEventListener("click", () => {
   renewedEnergy.fire();
 });
 
-export {lowEnergy, renewedEnergy}
+export { lowEnergy, renewedEnergy };
