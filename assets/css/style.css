@@ -1,0 +1,26 @@
+#skildpadde{
+    width: 2000px;
+
+}
+
+div{
+    display: flex;
+    position: absolute;
+    margin: auto;
+    right: 40%;
+    bottom: 5%;
+    gap: 2vw;
+}
+
+button{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2vw;
+    background-color: transparent;
+    border: white 4px solid;
+    border-radius: 10px;
+    color: white;
+}
+
+button:hover{
+    background-color: darkblue;
+}
