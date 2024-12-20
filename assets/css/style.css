@@ -1,3 +1,9 @@
+body{
+    margin: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
 #skildpadde{
     width: 2000px;
 
